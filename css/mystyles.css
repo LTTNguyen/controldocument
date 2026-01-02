@@ -1,0 +1,962 @@
+/*Bastante Redundancia (Clases duplicadas con pocos o un cambio) pero no encontre una mejor manera de hacerlo, como dicen por ahi 
+si no esta roto no lo arregles*/
+.Backcolor{
+	background-color: #ccc2ab;
+}
+.Centrar{
+  display: inline-flex;
+  flex-direction: row;
+  min-width: 0;
+  margin: 10px;
+  justify-content: flex-start;
+}
+.CentrarAnalisis{
+  display: inline-flex;
+  min-width: 0;
+  margin: 10px;
+  text-align: center;
+}
+.CentrarFG{
+  display: inline-flex;
+  flex-direction: row;
+  min-width: 0;
+  justify-content: flex-start;
+  height: 30px; 
+  border: 1px solid black; 
+  margin: 10px 0px 0px 7px;
+}
+.CentrarSticky{
+  display: inline-block;
+	min-width: 0;
+	margin: 10px;
+}
+.CentrarStickyText{
+	text-align: center; 
+	height: 60px; 
+	width: 500px; 
+	background-color: #3c53a3;
+	display: inline-block;
+	min-width: 0;
+	margin: 10px;
+}
+.textdec{
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.textdecsticky{
+	font-family: arial, serif;
+	font-weight: bold;
+	font-size: 40px; 
+	color: black; 
+	background-color: #3c53a3;
+}
+.textdecFGDO{
+	background-color: #ccc2ab; 
+	font-family: arial, serif;
+	font-weight: bold;
+	color: #3c53a3;
+}
+.Botones{
+	height: 35px;
+	width: 80%;
+}
+.BotonesForm{
+	height: 35px;
+	width: 100%;
+}
+#ButtonGridFG{
+	display: grid; 
+	height: 70px; 
+	margin: 1% 0px 0px 25%; 
+	width: 30%;
+}
+.ButtonGrid{
+	display: grid; 
+	height: 250px; 
+	margin: 1% 0px 0px 25%; 
+	width: 30%;
+}
+.InputWidth{
+	width: 120px;
+}
+.ProductoNuevoDesc{
+	width: 120px;
+}
+.InputWidthCC{
+	width: 160px;
+}
+.CentrarAbajoDer{
+	display: inline-flex;
+  flex-direction: row;
+	min-width: 0;
+	margin: 10px;
+	gap: 5px;
+	justify-content: flex-start;
+	padding-left: 64px;
+}
+.CentrarDerTrab{
+	display: inline-flex;
+  flex-direction: row;
+	min-width: 0;
+	margin: 6% 5px 5px 5px;
+	justify-content: flex-start;
+	padding-left: 64px;
+}
+.CentrarDerBode{
+	display: inline-flex;
+  flex-direction: row;
+	min-width: 0;
+	margin: 4% 5px 5px 5px;
+	justify-content: flex-start;
+	padding-left: 64px;
+}
+.CentrarAbajoDerTrab{
+	display: inline-flex;
+  flex-direction: row;
+	min-width: 0;
+	margin: 5px;
+	justify-content: flex-start;
+	padding-left: 64px;
+}
+.CentrarAbajoDerSelect{
+	display: inline-flex;
+  flex-direction: row;
+	min-width: 0;
+	margin: 5px;
+	justify-content: flex-start;
+	padding-left: 8px;
+}
+.CajasPeq{
+	width: 50px;
+	margin-left: 10px;
+}
+.Borde{
+	 overflow: auto; 
+	 margin: 7px; 
+	 padding-left: 10px; 
+	 border: 3px solid #3c53a3; 
+	 border-spacing: 10px;
+}
+.BordeFCAbajo{
+	 overflow: auto; 
+	 margin: 7px; 
+	 padding-left: 10px; 
+	 border: 3px solid #3c53a3; 
+	 border-spacing: 10px;
+	 margin-left: auto; 
+	 height: 310px; 
+	 width: 40%;
+}
+.BordeFEAbajo{
+	 overflow: auto; 
+	 margin: 7px; 
+	 padding-left: 10px; 
+	 border: 3px solid #3c53a3; 
+	 border-spacing: 10px;
+	 margin-left: auto; 
+	 height: 160px; 
+	 width: 40%;
+}
+.BordeFC{
+	height: 165px;
+	overflow: auto; 
+	margin: 7px; 
+	padding-left: 10px; 
+	border: 3px solid #3c53a3; 
+	border-spacing: 10px;
+}
+.BordeTrab{
+	height: 265px;
+	overflow: auto; 
+	margin: 7px 0px 0px 10%; 
+	padding-left: 10px; 
+	border: 3px solid #3c53a3; 
+	border-spacing: 10px;
+	width: 76%;
+}
+.BordeBode{
+	height: 365px;
+	overflow: auto; 
+	margin: 7px 0px 0px 10%; 
+	padding-left: 10px; 
+	border: 3px solid #3c53a3; 
+	border-spacing: 10px;
+	width: 76%;
+}
+.BordeFE{
+	height: 125px;
+	overflow: auto; 
+	margin: 7px; 
+	padding-left: 10px; 
+	border: 3px solid #3c53a3; 
+	border-spacing: 10px;
+}
+.BordePG{
+	height: 65px;
+	overflow: auto; 
+	margin: 7px; 
+	padding-left: 10px; 
+	border: 3px solid #3c53a3; 
+	border-spacing: 10px;
+}
+.SimpleGrid{
+	display: grid;
+}
+.SimpleFlex{
+	display: flex;
+}
+.SimpleFlexAnalisis{
+	display: flex;
+  margin: 90px 0px 0px 0px;
+}
+.SimpleFlexAnalisisBottom{
+	display: flex;
+  margin: 0px 0px 0px 29%;
+}
+.SimpleFlexPedidoBottom{
+	display: flex;
+  margin: 0px 0px 0px 43%;
+}
+.SimpleFlexAnalisisButton{
+	display: flex;
+  margin: 0px 0px 0px 44%;
+}
+.BordeGrid{
+	 overflow: auto; 
+	 margin: 7px; 
+	 padding-left: 10px; 
+	 border: 3px solid #3c53a3; 
+	 border-spacing: 10px;
+	 grid-row: 1/2; 
+	 width: 99%; 
+	 height: 370px;
+}
+.BordeOC{
+	 overflow: auto; 
+	 margin: 7px; 
+	 padding-left: 10px; 
+	 border: 3px solid #3c53a3; 
+	 border-spacing: 10px;
+	 height: 275px;
+}
+.BordeProd{
+	 overflow: auto; 
+	 margin: 7px; 
+	 padding-left: 10px; 
+	 border: 3px solid #3c53a3; 
+	 border-spacing: 10px;
+	 height: 255px;
+}
+.BordeProdAnalisisLeft{
+	 overflow: auto; 
+	 margin: 7px; 
+	 padding-left: 10px; 
+	 border: 3px solid black; 
+	 border-spacing: 10px;
+	 height: 355px;
+	 width: 50%;
+	 background-color: white;
+}
+.BordeProdAnalisisRight{
+	 overflow: auto; 
+	 margin: 7px; 
+	 padding-left: 10px; 
+	 border: 3px solid black; 
+	 border-spacing: 10px;
+	 height: 355px;
+   width: 50%;
+   background-color: white;
+}
+#BordeProve{ 
+	 margin: 7px; 
+	 padding-left: 10px; 
+	 border: 3px solid #3c53a3; 
+	 border-spacing: 10px;
+	 height: auto;
+}
+#BordeProductos{
+	 overflow: auto; 
+	 margin: 7px; 
+	 padding-left: 10px; 
+	 border: 2px outset white; 
+	 border-spacing: 10px;
+	 height: 520px;
+}
+.HeaderTemp{
+	text-align: center;
+	position: sticky;
+	position: -webkit-sticky; 
+	top: 0; 
+	background-color: skyblue;
+	z-index: 1000;
+}
+.HeaderTempAnalisis{
+	text-align: center;
+	position: fixed;
+	top: 0; 
+	background-color: #ccc2ab;
+	z-index: 1000;
+}
+.textdecstickyanalisis{
+	font-family: arial, serif;
+	font-weight: bold;
+	font-size: 20px; 
+	color: black;
+	padding-top: 10px;
+}
+.textdecstickyanalisiscentro{
+	font-family: arial, serif;
+	font-weight: bold;
+	font-size: 16px; 
+	color: red;
+}
+.CentrarStickyTextAnalisis{
+	text-align: center; 
+	height: 60px; 
+	width: 420px; 
+	display: inline-block;
+	min-width: 0;
+	margin: 10px;
+}
+.WH50{
+	width: 50px;
+	height: 50px;
+}
+.W80{
+	width: 80px;
+}
+#Atencion{
+	width: 350px;
+}
+#Ciudad{
+	width: 110px;
+}
+#Comuna{
+  width: 140px;
+}
+#Telefono{
+	width: 120px;
+}
+#bodega{
+	width: 65px;
+}
+#nombre{ /*Nombre Moneda*/
+	width: 55px;
+}
+#rut_proveedor{
+	width: 95px;
+}
+#rut_cliente{
+	width: 95px;
+}
+#rut_proveedorsecu{
+	width: 95px;
+}
+#EjecutarFG{
+	height: 55px;
+	width: 200px
+}
+#BuscarFactura{
+	height: 45px;
+	width: 400px
+}
+#TextObserv{
+	overflow: hidden; 
+	resize: none; 
+	width: 730px; 
+	height: 65px
+}
+#TextoObservacion{
+	overflow: hidden; 
+	resize: none; 
+	width: 730px; 
+	height: 65px
+}
+.LowerButtons{
+	display: grid; 
+	height: 255px; 
+	margin: 7px 0px 0px 40px; 
+	width: 30%;
+}
+.LowerButtonsTrabElim{
+	display: grid; 
+	height: 155px; 
+	margin: 50px 0px 0px 10%; 
+	width: 30%;
+}
+.LowerButtonsTrab{
+	display: grid; 
+	height: 125px; 
+	margin: 50px 0px 0px 9%; 
+	width: 30%;
+}
+.LowerButtonsTrabGuar{
+	display: grid; 
+	height: 35px; 
+	margin: 50px 0px 0px 0%; 
+	width: 20%;
+}
+.LowerRightBox{
+	overflow: auto; 
+	border: 2px outset white; 
+	margin: 7px; 
+	width: 42%; 
+	height: 250px;
+}
+.GridAbajoDer{
+  grid-column: 2/4;
+	margin: 7px;
+	margin-left: auto;
+	height: 275px;
+	width: 98%;
+	overflow: auto;
+	padding-left: 10px;
+	border: 3px solid #3c53a3;
+	border-spacing: 10px;
+}
+/*Inicio del orden de los botones*/
+#GuardarOC{
+	order: 0;
+}
+#InformeOC{
+	order: 5;
+}
+#BuscarOC{
+	order: 1;
+}
+#Nuevo-Proveedor{
+	order: 2;
+}
+#Nuevo-Producto{
+	order: 3;
+}
+/*Fin del orden de los botones*/
+#InformeFC{
+	margin-left: 150px;
+	width:30%;
+	height: 35px;
+}
+.BotonTrab{
+	height: 35px;
+	width: 60%;
+}
+#InformeNCD{
+	margin-left: 120px;
+	width:45%;
+	height: 35px;
+}
+#BodegaNCD{
+	margin-left: 120px;
+	width:45%;
+	height: 35px;
+	margin-top: 40px;
+}
+#GuardarPago{
+	margin-left: 150px;
+	width:30%;
+	height: 35px;
+}
+.SubtotalText{
+	padding-right: 32px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.MontoExenText{
+	padding-right: 3px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.NetoText{
+	padding-right: 57px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.IVAText{
+	padding-right: 55px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.TotalText{
+	padding-right: 24px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.TotalPagadoText{
+	padding-right: 16px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.SaldoText{
+	padding-right: 66px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.ImptoText{
+	padding-right: 13px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.RutProvText{
+	padding-right: 30px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+/*Texto de Proveedores aqui abajo*/
+
+.CElectronicoText{
+	padding-right: 1px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.TelefonoText{
+	padding-right: 73px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.CiudadText{
+	padding-right: 85px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.ComunaText{
+	padding-right: 77px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.DireccionText{
+	padding-right: 67px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.NombreFantasiaText{
+	padding-right: 16px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.GiroComercialText{
+	padding-right: 30px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.RazonSocialText{
+	padding-right: 45px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.RUTProveedorText{
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.ContactoText{
+	padding-right: 71px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.RUTClienteText{
+	padding-right: 52px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+/*Fin Texto de Proveedores*/
+
+#editor{
+	margin-top: 10px; 
+}
+th{
+	border: 1px solid black;
+	background-color: white !important;
+	width: 300px;
+	margin-top: 10px;
+	text-align: center;
+	height: 1%;
+	overflow: auto;
+}
+
+td{
+	border: 1px solid black;
+	background-color: white !important;
+	width: 300px;
+	margin-top: 1px;
+	overflow: auto;
+}
+#DescripcionInput{
+	width: 100%;
+}
+#CaracteristicasInput{
+	width: auto;
+}
+.CentroCostoText{
+	padding-right: 12px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.UnidadMedidaText{
+	padding-right: 0px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.CajaCentroCosto{
+	display: inline-flex;
+  flex-direction: row;
+	min-width: 0;
+	margin: 10px;
+	gap: 5px;
+	justify-content: flex-start;
+	padding-left: 108px;
+}
+.ProductoText{
+	padding-right: 76px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.DescripcionText{
+	padding-right: 56px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.EvaluaStockText{
+	padding-right: 0px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.ClasificacionText{
+	padding-right: 51px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.MarcaText{
+	padding-right: 97px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.ColorText{
+	padding-right: 102px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.VoltajeText{
+	padding-right: 93px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.GarantiaText{
+	padding-right: 81px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.CaracteristicasText{
+	padding-right: 35px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.CategoriaText{
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.CajaUnidadMedida{
+	display: inline-flex;
+  flex-direction: row;
+	min-width: 0;
+	margin: 10px;
+	gap: 5px;
+	justify-content: flex-start;
+	padding-left: 108px;
+}
+.UnidadMedidaProd{
+	width: 4px;
+}
+.CajaModelo{
+	display: inline-flex;
+  flex-direction: row;
+	min-width: 0;
+	margin: 10px;
+	gap: 5px;
+	justify-content: flex-start;
+	padding-left: 108px;
+}
+.CajaMedida{
+	display: inline-flex;
+  flex-direction: row;
+	min-width: 0;
+	margin: 10px;
+	gap: 5px;
+	justify-content: flex-start;
+	padding-left: 108px;
+}
+.CajaNumeroSerie{
+	display: inline-flex;
+  flex-direction: row;
+	min-width: 0;
+	margin: 10px;
+	gap: 5px;
+	justify-content: flex-start;
+	padding-left: 228px;
+}
+.CajaSoporte{
+	display: inline-flex;
+  flex-direction: row;
+	min-width: 0;
+	margin: 10px;
+	gap: 5px;
+	justify-content: flex-start;
+	padding-left: 228px;
+}
+.ModeloText{
+	padding-right: 53px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.MedidaText{
+	padding-right: 54px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.NumeroSerieText{
+	padding-right: 11px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.SoporteText{
+	padding-right: 51px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+#ClasificacionSelect{
+	width: 300px;
+}
+#EvaluaInput{
+	width: 100px;
+}
+#MarcaInput{
+	width: auto;
+}
+#ColorInput{
+	width: auto;
+}
+#ProductoInput{
+	width: 275px;
+}
+#ProductoInputAnalisis{
+	width: 85px;
+	margin: 0px 0px 0px 9px;
+}
+#PedidoInputAnalisis{
+	width: 85px;
+}
+#SoporteInput{
+	width: auto;
+}
+#ModeloInput{
+	width: auto;
+}
+#MedidaInput{
+	width: auto;
+}
+#NumeroSerieInput{
+	width: 85px;
+}
+#centro_costo{
+	width: 30px;
+	margin-left: 3px;
+}
+#c_costo{
+	width: 346px;
+	margin-left: 15px;
+}
+#unidadesnombre{
+	margin-left: 5px;
+	width: 210px;
+}
+#CategoriaInput{
+	width: 30px;
+}
+#CategoriaSelect{
+	width: 380px;
+}
+.NombreTrabText{
+	padding-right: 78px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+#rutproveedor{
+width: 150px;
+}
+.ProveedorFormIng{
+width: 400px;
+}
+.NombreBodegaInput{
+width: 700px;
+}
+.TelefonoInput{
+width: 150px;
+}
+.NombreTrabInput{
+width: 700px;
+}
+.DescripcionCCText{
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+	width: 3px;
+}
+.CentroCostoCCText{
+	padding-right: 41px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.DescripcionCargoText{
+	padding-right: 38px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.NombreBodegaText{
+	padding-right: 23px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.CEBodegaText{
+	padding-right: 5px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.BodegaBText{
+	padding-right: 80px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.RUTRBodegaText{
+	padding-right: 17px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.RUTEBodegaText{
+	padding-right: 45px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.PatenteText{
+	padding-right: 33px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.MarcaVehiculoText{
+	padding-right: 43px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.ModeloVehiculoText{
+	padding-right: 34px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.NROSerieVehiculoText{
+	padding-right: 21px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
+.CategoriaGeneralText{
+	padding-right: 88px;
+	font-family: arial, serif;
+	font-weight: bold;
+	background-color: #4a4340;
+	color: white;
+}
